@@ -6,16 +6,20 @@
 * Perl 5.x (already installed under macOS).
 
 
-### Additional dependencies:
+### Additional plugin dependencies:
 
-* wee_slack.py:
+#### wee_slack.py:
 
-`pip install websocket-client`
+> NOTE: wee_slack.py plugin operates on Slack websockets directly (exactly as "regular Slack web-client" does), hence additional pip extension has to be installed:
+
+`pip install websocket-client` (you may need root access)
 
 
-* notification_center.py:
+#### notification_center.py:
 
-`pip install pync`
+> NOTE: notification_center.py plugin is macOS-only - for other notification systems - seek for compatible "notify" plugin here: https://weechat.org/scripts/). Additional pip extension has to be installed:
+
+`pip install pync` (you may need root access)
 
 
 ## Installation:

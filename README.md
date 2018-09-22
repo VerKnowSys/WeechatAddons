@@ -64,7 +64,7 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 * Copy `config/*.conf` files to `~/.weechat/`
 
-* Restart `weechat` :)
+* Start `weechat` and enjoy! :)
 
 
 ## Run the thing:

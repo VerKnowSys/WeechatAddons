@@ -1,6 +1,6 @@
 # WeeChatAddons
 
-This repository contains cherry picked plugins, themes and other configuration goodies for best [Slack](https://slack.com/) experience under [WeeChat](https://weechat.org/) client.
+This repository contains cherry picked scripts, themes and other configuration goodies for best [Slack](https://slack.com/) experience under [WeeChat](https://weechat.org/) client.
 
 
 ## Authors:
@@ -14,7 +14,7 @@ This repository contains cherry picked plugins, themes and other configuration g
 
 * Daniel (dmilith) Dettlaff:
     - prebuilt software preparation,
-    - picked a few mandatory plugins,
+    - picked a few mandatory scripts,
     - prepared default configuration,
 
 
@@ -34,7 +34,7 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 * Perl 5.x (already installed under macOS).
 
 
-## Additional plugin dependencies:
+## Additional scripts dependencies:
 
 ### wee_slack.py:
 
@@ -56,9 +56,9 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 * Run `weechat` once (to init your `~/.weechat` directory), then quit it by typing `/quit`.
 
-* Copy `plugins/*.pl` files to: `~/.weechat/perl/autoload`
+* Copy `scripts/*.pl` files to: `~/.weechat/perl/autoload`
 
-* Copy `plugins/*.py` files to: `~/.weechat/python/autoload`
+* Copy `scripts/*.py` files to: `~/.weechat/python/autoload`
 
 * Copy `themes/*` files to: `~/.weechat/themes`. If you don't like `flashcode.theme` (my fav), you can find more themes here: https://weechat.org/themes/.
 
@@ -123,6 +123,6 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 * WeeChat - [project page](https://weechat.org/)
 
-* WeeChat Scripts (plugins) - [scripts page](https://weechat.org/scripts/)
+* WeeChat Scripts - [scripts page](https://weechat.org/scripts/)
 
 * wee_slack.py - [project page](https://github.com/wee-slack/wee-slack)

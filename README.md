@@ -18,6 +18,11 @@ This repository contains cherry picked plugins, themes and other configuration g
     - prepared default configuration,
 
 
+## But… why?
+
+WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that with default Slack web client. ;)
+
+
 ## Requirements:
 
 * Modern terminal with full UTF-8 support (iTerm, Terminal.app, Konsole, Gnome-terminal, urxvt, …).

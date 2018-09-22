@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # https://github.com/sindresorhus/weechat-notification-center
 # Requires `pip install pync`
 

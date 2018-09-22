@@ -110,7 +110,7 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 ## Useful commands:
 
-* `/set slack` - shows all variables that have "slack" in their name.
+* `/set keyword` - shows all variables that have "keyword" in their name/path. For example: `/set timeout` - shows all available timeout variables. `/set slack` - shows all Slack specific settings and so on…
 
 * `/set some.variable.path "some-value"` - sets given variable with given value. Example: `/set plugins.var.python.slack.background_load_all_history "true"`.
 

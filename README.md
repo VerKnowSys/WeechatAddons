@@ -91,24 +91,30 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 ## Default (and also most useful) keystrokes:
 
+* `fn` - keep pressed to enable mouse select (under Terminal.app, may be also `shift` or `alt`)
+
 * `meta-a` or `meta-j` - jump to next window with activity.
 
-* `ctrl-n` - switch to next window
+* `ctrl-n` - switch to next window.
 
-* `ctrl-p` - switch to previous window
+* `ctrl-p` - switch to previous window.
 
 * `meta-1…0` - switch to window with number 1..10
 
 * `meta-q…p` - switch to window with number 11..20
 
-* `meta-d` - close current window
+* `meta-d` - close current window.
 
-* `meta-l` - trigger bare(raw) mode for current window (mouse triggers are disabled for bare window)
+* `meta-l` - trigger bare(raw) mode for current window (mouse triggers are disabled for bare window).
 
 
 ## Useful commands:
 
-* `/buffer *NUM` - switch to window buffer number "NUM"
+* `/set slack` - shows all variables that have "slack" in their name.
+
+* `/set some.variable.path "some-value"` - sets given variable with given value. Example: `/set plugins.var.python.slack.background_load_all_history "true"`.
+
+* `/buffer *NUM` - switch to window buffer number "NUM".
 
 * `/layout store YOURNAME` - makes current layout of WeeChat's buffer windows persistent.
 

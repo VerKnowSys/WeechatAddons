@@ -121,7 +121,7 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 ## Adding own key binds:
 
-* `/key bind meta-j /input jump_smart` - binds meta-j keystroke to WeeChat's /input command.
+* `/key bind meta-j /input jump_smart` - binds `meta-j` keystroke to WeeChat's /input command to jump to next active window buffer.
 
 
 ## Adding own commands (a.k.a. aliases):

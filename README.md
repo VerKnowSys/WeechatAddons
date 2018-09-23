@@ -20,7 +20,7 @@ This repository contains cherry picked scripts, themes and other configuration g
 
 ## But… why?
 
-WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that with default Slack web client. ;)
+WeeChat connected to 6 distinct Slack groups uses `80-120` MiB of RAM with it's "background messages prefetch" feature enabled! Try that with default Slack web client. ;)
 
 
 ## Requirements:

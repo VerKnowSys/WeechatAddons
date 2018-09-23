@@ -25,6 +25,9 @@ This repository contains cherry picked scripts, themes and other configuration g
 * nils_2:
     - histman.py lead developer,
 
+* David Rubin:
+    * urlgrab.py lead developer,
+
 * Daniel (dmilith) Dettlaff:
     - prebuilt software preparation,
     - picked a few mandatory scripts,

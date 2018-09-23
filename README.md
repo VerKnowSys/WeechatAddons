@@ -110,6 +110,10 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 ## Useful commands:
 
+* `s/inztaWler/installer/` - fix "the typo" in your most recent message.
+
+* `2s///` - delete your second last entered message.
+
 * `/set keyword` - shows all variables that have "keyword" in their name/path. For example: `/set timeout` - shows all available timeout variables. `/set slack` - shows all Slack specific settings and so on…
 
 * `/set some.variable.path "some-value"` - sets given variable with given value. Example: `/set plugins.var.python.slack.background_load_all_history "true"`.
@@ -134,6 +138,17 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 * `+:wink:` - set "wink" on last message in current window
 
 * `5+:muscle:` - set "muscle" reaction on 5th message from current
+
+> NOTE: More examples available on: [wee-slack github page](https://github.com/wee-slack/wee-slack)
+
+
+## Say cheese!
+
+
+> Channel `#general` of `Rust-Slack` group from `WeeChat`:
+
+![Rust-lang Slack group from WeeChat](http://s.verknowsys.com/27348367e1d139fb8be585fac2c19c8f.png)
+
 
 
 ## Main resources:

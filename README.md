@@ -129,9 +129,11 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 * `/alias add shrug /slack slash /shrug` - will define `/shrug` command for WeeChat that's calling Slack feature ("slash" allows direct access to Slack-specific commands).
 
 
-## Adding Slack "reaction" - always applies on the last message in WeeChat's current window:
+## Adding Slack "reaction" - reply on `Nth` last message in WeeChat's current window (N=1 is default and can be ommited). For example:
 
-* `+:muscle:`
+* `+:wink:` - set "wink" on last message in current window
+
+* `5+:muscle:` - set "muscle" reaction on 5th message from current
 
 
 ## Main resources:

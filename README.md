@@ -27,7 +27,7 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 
 * Modern terminal with full UTF-8 support (iTerm, Terminal.app, Konsole, Gnome-terminal, urxvt, …).
 
-* Weechat 2.2 (prebuilt version for macOS 10.11+ [is available here](http://software.verknowsys.com/binary/Darwin-10.11-x86_64/Weechat-2.2-Darwin-10.11-x86_64.txz)).
+* Weechat 2.2 (prebuilt version for macOS 10.11+ [is available here](http://software.verknowsys.com/binary/Darwin-10.11-x86_64/Weechat-2.2-Darwin-10.11-x86_64.txz), as a [Sofin](https://github.com/VerKnowSys/sofin) bundle. Bundle can also be manually unpacked to: `/Software/Weechat`. To start it after unpack, try: `/Software/Weechat/exports/weechat`).
 
 * Python 2.x (already installed under macOS).
 

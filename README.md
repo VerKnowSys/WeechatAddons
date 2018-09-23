@@ -119,6 +119,16 @@ WeeChat connected to 5 distinct Slack groups uses `55-80` MiB of RAM. Try that w
 * `/layout store YOURNAME` - makes current layout of WeeChat's buffer windows persistent.
 
 
+## Adding own key binds:
+
+* `/key bind meta-j /input jump_smart` - binds meta-j keystroke to WeeChat's /input command.
+
+
+## Adding own commands (a.k.a. aliases):
+
+* `/alias add shrug /slack slash /shrug` - will define `/shrug` command for WeeChat that's calling Slack feature ("slash" allows direct access to Slack-specific commands).
+
+
 ## Main resources:
 
 * WeeChat - [project page](https://weechat.org/)

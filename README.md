@@ -8,9 +8,22 @@ This repository contains cherry picked scripts, themes and other configuration g
 
 * Sébastien Helleu:
     - WeeChat lead developer,
+    - theme.py lead developer,
 
 * Ryan Huber:
     - wee_slack.py lead developer,
+
+* Sindre Sorhus:
+    - notification_center.py lead developer,
+
+* Stefan Wold:
+    - weemoticons.py lead developer,
+
+* Nei:
+    - multiline.pl lead developer,
+
+* nils_2:
+    - histman.py lead developer,
 
 * Daniel (dmilith) Dettlaff:
     - prebuilt software preparation,

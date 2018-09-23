@@ -20,7 +20,7 @@ weechat.register(SCRIPT_NAME, SCRIPT_AUTHOR, SCRIPT_VERSION, SCRIPT_LICENSE, SCR
 DEFAULT_OPTIONS = {
 	'show_highlights': 'on',
 	'show_private_message': 'on',
-	'show_message_text': 'on',
+	'show_message_text': 'off',
 	'sound': 'off',
 	'sound_name': 'Pong',
 	'activate_bundle_id': 'com.apple.Terminal',

@@ -18,8 +18,8 @@ WEECHAT_ICON = os.path.expanduser('~/.weechat/weechat.png')
 weechat.register(SCRIPT_NAME, SCRIPT_AUTHOR, SCRIPT_VERSION, SCRIPT_LICENSE, SCRIPT_DESC, '', '')
 
 DEFAULT_OPTIONS = {
-	'show_highlights': 'on',
-	'show_private_message': 'on',
+	'show_highlights': 'off',
+	'show_private_message': 'off',
 	'show_message_text': 'off',
 	'sound': 'off',
 	'sound_name': 'Pong',
@@ -36,7 +36,7 @@ weechat.hook_print('', 'irc_privmsg', '', 1, 'notify', '')
 def notify(data, buffer, date, tags, displayed, highlight, prefix, message):
 	# ignore if it's yourself
 	own_nick = weechat.buffer_get_string(buffer, 'localvar_nick')
-	if prefix == own_nick or prefix == ('@%s' % own_nick):
+	if prefix == own_nick or prefix == ('@{}'.format(own_nick)):
 		return weechat.WEECHAT_RC_OK
 
 	# ignore messages older than the configured theshold (such as ZNC logs) if enabled
@@ -59,7 +59,7 @@ def notify(data, buffer, date, tags, displayed, highlight, prefix, message):
 			Notifier.notify('In {} by {}'.format(channel, prefix), title='Highlighted Message', sound=sound, appIcon=WEECHAT_ICON, activate=activate_bundle_id)
 	elif weechat.config_get_plugin('show_private_message') == 'on' and 'notify_private' in tags:
 		if weechat.config_get_plugin('show_message_text') == 'on':
-			Notifier.notify(message, title='{} [private]'.format(prefix), sound=sound, appIcon=WEECHAT_ICON, activate=activate_bundle_id)
+			Notifier.notify(message, title="{} [private]".format(prefix), sound=sound, appIcon=WEECHAT_ICON, activate=activate_bundle_id)
 		else:
 			Notifier.notify('From {}'.format(prefix), title='Private Message', sound=sound, appIcon=WEECHAT_ICON, activate=activate_bundle_id)
 	return weechat.WEECHAT_RC_OK

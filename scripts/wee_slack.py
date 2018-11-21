@@ -35,7 +35,7 @@ except:
 
 SCRIPT_NAME = "slack"
 SCRIPT_AUTHOR = "Ryan Huber <rhuber@gmail.com>"
-SCRIPT_VERSION = "2.1.1"
+SCRIPT_VERSION = "2.2.0"
 SCRIPT_LICENSE = "MIT"
 SCRIPT_DESC = "Extends weechat for typing notification/search/etc on slack.com"
 
@@ -2091,7 +2091,7 @@ class SlackThreadChannel(SlackChannelCommon):
             w.buffer_set(self.channel_buffer, "short_name", self.formatted_name(style="sidebar", enable_color=True))
             time_format = w.config_string(w.config_get("weechat.look.buffer_time_format"))
             parent_time = time.localtime(SlackTS(self.parent_message.ts).major)
-            topic = '{} {} | {}'.format(time.strftime(time_format, parent_time), self.parent_message.sender, self.render(self.parent_message)	)
+            topic = '{} {} | {}'.format(time.strftime(time_format, parent_time), self.parent_message.sender, self.render(self.parent_message)   )
             w.buffer_set(self.channel_buffer, "title", topic)
 
             # self.eventrouter.weechat_controller.set_refresh_buffer_list(True)
@@ -2884,7 +2884,7 @@ def render(message_json, team, force=False):
 
         if "edited" in message_json:
             text += "{}{}{}".format(
-                    w.color("095"), ' (edited)', w.color("reset"))
+                    w.color(config.color_edited_suffix), ' (edited)', w.color("reset"))
 
         text += unfurl_refs(unwrap_attachments(message_json, text))
 
@@ -2918,7 +2918,7 @@ def linkify_text(message, team, channel):
         .replace('>', '&gt;')
         .split(' '))
     for item in enumerate(message):
-        targets = re.match('^\s*([@#])([\w\(\).-]+)(\W*)', item[1], re.UNICODE)
+        targets = re.match('^\s*([@#])([\w\(\)\'.-]+)(\W*)', item[1], re.UNICODE)
         if targets and targets.groups()[0] == '@':
             named = targets.groups()
             if named[1] in ["group", "channel", "here"]:
@@ -3346,13 +3346,13 @@ def command_register(data, current_buffer, args):
     if args == 'register':
         message = textwrap.dedent("""
             #### Retrieving a Slack token via OAUTH ####
-
             1) Paste this into a browser: https://slack.com/oauth/authorize?client_id=2468770254.51917335286&scope=client
             2) Select the team you wish to access from wee-slack in your browser.
             3) Click "Authorize" in the browser **IMPORTANT: the redirect will fail, this is expected**
+               If you get a message saying you are not authorized to install wee-slack, the team has restricted Slack app installation and you will have to request it from an admin. To do that, go to https://my.slack.com/apps/A1HSZ9V8E-wee-slack and click "Request to Install".
             4) Copy the "code" portion of the URL to your clipboard
             5) Return to weechat and run `/slack register [code]`
-        """)
+        """).strip()
         w.prnt("", message)
         return
 
@@ -3534,7 +3534,7 @@ def thread_command_callback(data, current_buffer, args):
 @utf8_decode
 def reply_command_callback(data, current_buffer, args):
     channel = EVENTROUTER.weechat_controller.buffers[current_buffer]
-    args = args.split()
+    args = args.split(None, 2)
     if len(args) != 3:
         w.prnt('', 'Usage: /reply <count/id> <message>')
         return w.WEECHAT_RC_OK_EAT
@@ -3549,8 +3549,7 @@ def reply_command_callback(data, current_buffer, args):
         w.prnt('', 'ERROR: Invalid id given, must be a number greater than 0 or an existing id')
         return w.WEECHAT_RC_OK_EAT
 
-    text = ' '.join(args[2:])
-    channel.send_message(text, request_dict_ext={'thread_ts': parent_id})
+    channel.send_message(args[2], request_dict_ext={'thread_ts': parent_id})
     return w.WEECHAT_RC_OK_EAT
 
 
@@ -3907,14 +3906,14 @@ def setup_hooks():
     w.hook_completion("emoji", "complete :emoji: for slack", "emoji_completion_cb", "")
 
     w.key_bind("mouse", {
-        "@chat(python.*.slack.com.*):button2": "hsignal:slack_mouse",
+        "@chat(python.*):button2": "hsignal:slack_mouse",
         })
     w.key_bind("cursor", {
-        "@chat(python.*.slack.com.*):D": "hsignal:slack_cursor_delete",
-        "@chat(python.*.slack.com.*):L": "hsignal:slack_cursor_linkarchive",
-        "@chat(python.*.slack.com.*):M": "hsignal:slack_cursor_message",
-        "@chat(python.*.slack.com.*):R": "hsignal:slack_cursor_reply",
-        "@chat(python.*.slack.com.*):T": "hsignal:slack_cursor_thread",
+        "@chat(python.*):D": "hsignal:slack_cursor_delete",
+        "@chat(python.*):L": "hsignal:slack_cursor_linkarchive",
+        "@chat(python.*):M": "hsignal:slack_cursor_message",
+        "@chat(python.*):R": "hsignal:slack_cursor_reply",
+        "@chat(python.*):T": "hsignal:slack_cursor_thread",
         })
 
     w.hook_hsignal("slack_mouse", "line_event_cb", "message")
@@ -3981,6 +3980,9 @@ class PluginConfig(object):
         'color_buflist_muted_channels': Setting(
             default='darkgray',
             desc='Color to use for muted channels in the buflist'),
+        'color_edited_suffix': Setting(
+            default='095',
+            desc='Color to use for (edited) suffix on messages that have been edited.'),
         'color_reaction_suffix': Setting(
             default='darkgray',
             desc='Color to use for the [:wave:(@user)] suffix on messages that'
@@ -4146,6 +4148,7 @@ class PluginConfig(object):
         return w.config_get_plugin(key) == default
 
     get_color_buflist_muted_channels = get_string
+    get_color_edited_suffix = get_string
     get_color_reaction_suffix = get_string
     get_color_thread_suffix = get_string
     get_debug_level = get_int

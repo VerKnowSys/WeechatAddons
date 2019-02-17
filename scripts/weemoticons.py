@@ -1467,7 +1467,7 @@ ICONS = {
     ':zzz:': u'\U0001F4A4',
 }
 
-ICON_PATTERN = re.compile(r"([:]([0-9a-zA-Z+_-_]*){1,2}([0-9a-zA-Z+_-]*)[:])")
+ICON_PATTERN = re.compile(r"([:]([0-9a-zA-Z+_-]*){1,2}([0-9a-zA-Z+_-]*)[:])")
 
 def icon(match):
     global ICONS

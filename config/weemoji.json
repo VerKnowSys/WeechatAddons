@@ -947,10 +947,6 @@
     "name": "briefcase",
     "unicode": "\ud83d\udcbc"
   },
-  "broccoli": {
-    "name": "broccoli",
-    "unicode": "\ud83e\udd66"
-  },
   "broken_heart": {
     "name": "broken_heart",
     "unicode": "\ud83d\udc94"
@@ -4467,7 +4463,7 @@
   },
   "hearts": {
     "name": "hearts",
-    "unicode": "\u2665\ufe0f"
+    "unicode": "💞"
   },
   "heavy_check_mark": {
     "name": "heavy_check_mark",
@@ -8103,52 +8099,52 @@
     "skinVariations": {
       "2": {
         "name": "point_up::skin-tone-2",
-        "unicode": "\u261d\ud83c\udffb"
+        "unicode": "☝️"
       },
       "3": {
         "name": "point_up::skin-tone-3",
-        "unicode": "\u261d\ud83c\udffc"
+        "unicode": "☝️"
       },
       "4": {
         "name": "point_up::skin-tone-4",
-        "unicode": "\u261d\ud83c\udffd"
+        "unicode": "☝️"
       },
       "5": {
         "name": "point_up::skin-tone-5",
-        "unicode": "\u261d\ud83c\udffe"
+        "unicode": "☝️"
       },
       "6": {
         "name": "point_up::skin-tone-6",
-        "unicode": "\u261d\ud83c\udfff"
+        "unicode": "☝️"
       }
     },
-    "unicode": "\u261d\ufe0f"
+    "unicode": "☝️"
   },
   "point_up_2": {
     "name": "point_up_2",
     "skinVariations": {
       "2": {
         "name": "point_up_2::skin-tone-2",
-        "unicode": "\ud83d\udc46\ud83c\udffb"
+        "unicode": "☝️"
       },
       "3": {
         "name": "point_up_2::skin-tone-3",
-        "unicode": "\ud83d\udc46\ud83c\udffc"
+        "unicode": "☝️"
       },
       "4": {
         "name": "point_up_2::skin-tone-4",
-        "unicode": "\ud83d\udc46\ud83c\udffd"
+        "unicode": "☝️"
       },
       "5": {
         "name": "point_up_2::skin-tone-5",
-        "unicode": "\ud83d\udc46\ud83c\udffe"
+        "unicode": "☝️"
       },
       "6": {
         "name": "point_up_2::skin-tone-6",
-        "unicode": "\ud83d\udc46\ud83c\udfff"
+        "unicode": "☝️"
       }
     },
-    "unicode": "\ud83d\udc46"
+    "unicode": "☝️"
   },
   "police_car": {
     "name": "police_car",
@@ -11169,7 +11165,7 @@
   "woman-with-bunny-ears-partying": {
     "name": "woman-with-bunny-ears-partying",
     "obsoletes": "dancers",
-    "unicode": "\ud83d\udc6f\u200d\u2640\ufe0f"
+    "unicode": "👯"
   },
   "woman-woman-boy": {
     "name": "woman-woman-boy",

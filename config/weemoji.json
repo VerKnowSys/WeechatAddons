@@ -4716,7 +4716,7 @@
   },
   "information_source": {
     "name": "information_source",
-    "unicode": "\u2139\ufe0f"
+    "unicode": "ℹ"
   },
   "innocent": {
     "name": "innocent",
@@ -5845,26 +5845,26 @@
     "skinVariations": {
       "2": {
         "name": "man-cartwheeling::skin-tone-2",
-        "unicode": "\ud83e\udd38\ud83c\udffb\u200d\u2642\ufe0f"
+        "unicode": "🤸"
       },
       "3": {
         "name": "man-cartwheeling::skin-tone-3",
-        "unicode": "\ud83e\udd38\ud83c\udffc\u200d\u2642\ufe0f"
+        "unicode": "🤸"
       },
       "4": {
         "name": "man-cartwheeling::skin-tone-4",
-        "unicode": "\ud83e\udd38\ud83c\udffd\u200d\u2642\ufe0f"
+        "unicode": "🤸"
       },
       "5": {
         "name": "man-cartwheeling::skin-tone-5",
-        "unicode": "\ud83e\udd38\ud83c\udffe\u200d\u2642\ufe0f"
+        "unicode": "🤸"
       },
       "6": {
         "name": "man-cartwheeling::skin-tone-6",
-        "unicode": "\ud83e\udd38\ud83c\udfff\u200d\u2642\ufe0f"
+        "unicode": "🤸"
       }
     },
-    "unicode": "\ud83e\udd38\u200d\u2642\ufe0f"
+    "unicode": "🤸"
   },
   "man-facepalming": {
     "name": "man-facepalming",
@@ -7729,7 +7729,7 @@
   },
   "performing_arts": {
     "name": "performing_arts",
-    "unicode": "\ud83c\udfad"
+    "unicode": "🎭"
   },
   "persevere": {
     "name": "persevere",
@@ -8396,7 +8396,7 @@
   },
   "radioactive_sign": {
     "name": "radioactive_sign",
-    "unicode": "\u2622\ufe0f"
+    "unicode": "☢"
   },
   "rage": {
     "name": "rage",
@@ -10238,7 +10238,7 @@
   },
   "warning": {
     "name": "warning",
-    "unicode": "\u26a0\ufe0f"
+    "unicode": "🛑"
   },
   "wastebasket": {
     "name": "wastebasket",
@@ -10386,7 +10386,7 @@
   },
   "white_check_mark": {
     "name": "white_check_mark",
-    "unicode": "✔️"
+    "unicode": "v"
   },
   "white_circle": {
     "name": "white_circle",
@@ -10535,26 +10535,26 @@
     "skinVariations": {
       "2": {
         "name": "woman-cartwheeling::skin-tone-2",
-        "unicode": "\ud83e\udd38\ud83c\udffb\u200d\u2640\ufe0f"
+        "unicode": "🤸"
       },
       "3": {
         "name": "woman-cartwheeling::skin-tone-3",
-        "unicode": "\ud83e\udd38\ud83c\udffc\u200d\u2640\ufe0f"
+        "unicode": "🤸"
       },
       "4": {
         "name": "woman-cartwheeling::skin-tone-4",
-        "unicode": "\ud83e\udd38\ud83c\udffd\u200d\u2640\ufe0f"
+        "unicode": "🤸"
       },
       "5": {
         "name": "woman-cartwheeling::skin-tone-5",
-        "unicode": "\ud83e\udd38\ud83c\udffe\u200d\u2640\ufe0f"
+        "unicode": "🤸"
       },
       "6": {
         "name": "woman-cartwheeling::skin-tone-6",
-        "unicode": "\ud83e\udd38\ud83c\udfff\u200d\u2640\ufe0f"
+        "unicode": "🤸"
       }
     },
-    "unicode": "\ud83e\udd38\u200d\u2640\ufe0f"
+    "unicode": "🤸"
   },
   "woman-facepalming": {
     "name": "woman-facepalming",

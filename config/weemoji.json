@@ -10557,26 +10557,26 @@
     "skinVariations": {
       "2": {
         "name": "woman-facepalming::skin-tone-2",
-        "unicode": "\ud83e\udd26\ud83c\udffb\u200d\u2640\ufe0f"
+        "unicode": "🤦"
       },
       "3": {
         "name": "woman-facepalming::skin-tone-3",
-        "unicode": "\ud83e\udd26\ud83c\udffc\u200d\u2640\ufe0f"
+        "unicode": "🤦"
       },
       "4": {
         "name": "woman-facepalming::skin-tone-4",
-        "unicode": "\ud83e\udd26\ud83c\udffd\u200d\u2640\ufe0f"
+        "unicode": "🤦"
       },
       "5": {
         "name": "woman-facepalming::skin-tone-5",
-        "unicode": "\ud83e\udd26\ud83c\udffe\u200d\u2640\ufe0f"
+        "unicode": "🤦"
       },
       "6": {
         "name": "woman-facepalming::skin-tone-6",
-        "unicode": "\ud83e\udd26\ud83c\udfff\u200d\u2640\ufe0f"
+        "unicode": "🤦"
       }
     },
-    "unicode": "\ud83e\udd26\u200d\u2640\ufe0f"
+    "unicode": "🤦"
   },
   "woman-frowning": {
     "name": "woman-frowning",

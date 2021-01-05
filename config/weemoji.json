@@ -8099,52 +8099,52 @@
     "skinVariations": {
       "2": {
         "name": "point_up::skin-tone-2",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "3": {
         "name": "point_up::skin-tone-3",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "4": {
         "name": "point_up::skin-tone-4",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "5": {
         "name": "point_up::skin-tone-5",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "6": {
         "name": "point_up::skin-tone-6",
-        "unicode": "☝️"
+        "unicode": "👆"
       }
     },
-    "unicode": "☝️"
+    "unicode": "👆"
   },
   "point_up_2": {
     "name": "point_up_2",
     "skinVariations": {
       "2": {
         "name": "point_up_2::skin-tone-2",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "3": {
         "name": "point_up_2::skin-tone-3",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "4": {
         "name": "point_up_2::skin-tone-4",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "5": {
         "name": "point_up_2::skin-tone-5",
-        "unicode": "☝️"
+        "unicode": "👆"
       },
       "6": {
         "name": "point_up_2::skin-tone-6",
-        "unicode": "☝️"
+        "unicode": "👆"
       }
     },
-    "unicode": "☝️"
+    "unicode": "👆"
   },
   "police_car": {
     "name": "police_car",
@@ -10382,7 +10382,7 @@
   },
   "white_check_mark": {
     "name": "white_check_mark",
-    "unicode": "v"
+    "unicode": "✓"
   },
   "white_circle": {
     "name": "white_circle",

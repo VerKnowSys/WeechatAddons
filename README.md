@@ -41,13 +41,13 @@ WeeChat connected to 6 distinct Slack groups uses `80-120` MiB of RAM with it's 
 
 ## Requirements:
 
-* Modern terminal with full UTF-8 support (iTerm, Terminal.app, Konsole, Gnome-terminal, urxvt, …).
+* Modern terminal with full UTF-8 support (Alacritty, iTerm, Terminal.app, Konsole, Gnome-terminal, urxvt, …).
 
-* Weechat 2.3+ (prebuilt version for macOS 10.11+ [is available here](http://software.verknowsys.com/binary/Darwin-10.11-x86_64/Weechat-2.3-Darwin-10.11-x86_64.txz), as a [Sofin](https://github.com/VerKnowSys/sofin) bundle. Bundle can also be manually unpacked to: `/Software/Weechat`. To start it after unpack, try: `/Software/Weechat/exports/weechat`).
+* Weechat 3+
 
-* Python 2.x (already installed under macOS).
+* Python 3.x
 
-* Perl 5.x (already installed under macOS).
+* Perl 5.x
 
 
 ## Additional scripts dependencies:
@@ -56,14 +56,14 @@ WeeChat connected to 6 distinct Slack groups uses `80-120` MiB of RAM with it's 
 
 > NOTE: wee_slack.py plugin operates on Slack websockets directly (exactly as "regular Slack web-client" does), hence additional pip extension has to be installed:
 
-`pip install websocket-client` (you may need root access)
+`pip3 install websocket-client`
 
 
 ### notification_center.py:
 
 > NOTE: notification_center.py plugin is macOS-only - for other notification systems - seek for compatible "notify" plugin here: https://weechat.org/scripts/). Additional pip extension has to be installed:
 
-`pip install pync` (you may need root access)
+`pip3 install pync` (you may need root access)
 
 
 ## Installation:

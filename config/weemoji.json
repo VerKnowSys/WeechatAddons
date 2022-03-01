@@ -3986,7 +3986,7 @@
   },
   "fog": {
     "name": "fog",
-    "unicode": "\ud83c\udf2b\ufe0f"
+    "unicode": "🌫️"
   },
   "foggy": {
     "name": "foggy",
@@ -8564,7 +8564,7 @@
   },
   "recycle": {
     "name": "recycle",
-    "unicode": "\u267b\ufe0f"
+    "unicode": "♻"
   },
   "red_car": {
     "aliasOf": "car",

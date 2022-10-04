@@ -4220,7 +4220,7 @@
   },
   "grey_question": {
     "name": "grey_question",
-    "unicode": "\u2754"
+    "unicode": "?"
   },
   "grimacing": {
     "name": "grimacing",
@@ -7675,7 +7675,7 @@
   },
   "partly_sunny_rain": {
     "name": "partly_sunny_rain",
-    "unicode": "\ud83c\udf26\ufe0f"
+    "unicode": "🌦️"
   },
   "passenger_ship": {
     "name": "passenger_ship",
@@ -11355,7 +11355,7 @@
   },
   "zebra_face": {
     "name": "zebra_face",
-    "unicode": "\ud83e\udd93"
+    "unicode": "🐎"
   },
   "zero": {
     "name": "zero",
